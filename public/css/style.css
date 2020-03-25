@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+thead {
+  background: red;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper .search {
+  position: relative;
+}
+
+.wrapper .search input {
+  width: 100%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid rgba(153, 153, 153, 0.3);
+  margin: 20px 0;
+  outline: none;
+  font-size: 18px;
+  padding-left: 50px;
+}
+
+.wrapper .search input:hover + .search_icon, .wrapper .search input:focus + .search_icon {
+  opacity: 1;
+}
+
+.wrapper .search .search_icon {
+  position: absolute;
+  background: url("../img/search.svg") center center/contain no-repeat;
+  padding: 8px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: .5;
+}
+
+.wrapper .table {
+  background: #fff;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.wrapper .table tr {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.wrapper .table tr::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background: rgba(153, 153, 153, 0.3);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.wrapper .table tr:nth-child(1)::before {
+  background: transparent;
+}
+
+.wrapper .table tr th {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #23cabc;
+}
+
+.wrapper .table tr th:nth-child(1) {
+  text-align: left;
+}
+
+.wrapper .table tr td {
+  padding: 30px 15px;
+}
+
+.wrapper .table tr td p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.wrapper .table .enable {
+  background: #23cabc;
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 50px;
+}
+
+.wrapper .table .disable {
+  background: #bbbbbb;
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 50px;
+}
+
+.wrapper .table .blocked {
+  background: url("../img/lock.svg") center center/contain no-repeat;
+  padding: 7px;
+  opacity: .6;
+}
+
+.wrapper .tac {
+  text-align: center;
+}
+
+.wrapper .type {
+  color: #ffa929;
+  font-weight: 500;
+}
+
+.wrapper .tool_tr {
+  position: relative;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.wrapper .tool_tr:hover {
+  cursor: pointer;
+  z-index: 100000;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .sort_btn {
+  cursor: pointer;
+}
+
+.wrapper .sort_arrow {
+  position: relative;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.wrapper .sort_arrow::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 20px;
+  background: url("../img/arr1.svg") center center/contain no-repeat;
+  width: 10px;
+  height: 10px;
+  opacity: .3;
+}
+
+.wrapper .sort_arrow::after {
+  content: "";
+  position: absolute;
+  background: url("../img/arr2.svg") center center/contain no-repeat;
+  width: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  height: 10px;
+}
+/*# sourceMappingURL=style.css.map */
